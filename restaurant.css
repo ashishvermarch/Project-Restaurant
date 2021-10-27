@@ -1,0 +1,314 @@
+body {
+    background-image: url("https://jolly-kalam-23776e.netlify.app/restaurantwebsite/assets/images/topography.svg"), linear-gradient(110deg, #f93d66, #6d47d9);
+    margin: 4em;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+/* header ul {
+    padding: 0;
+    display: grid;
+    grid-template-areas: "list list list list list";
+    list-style: none;
+    justify-content: space-between;
+}
+
+header a {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3.8em;
+    padding-right: 3.8em;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: #ffc600;
+    color: black;
+    text-decoration: none;
+} */
+
+header ul {
+    padding: 0;
+    display: grid;
+    grid-template-areas: "list list list list list";
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));  */
+    list-style: none;
+    grid-gap: 20px;
+}
+
+header a {
+    display: block;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    background-color: #ffc600;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header-2 {
+    display: none;
+}
+
+.section-1 {
+    margin-top: 50px;
+}
+
+.grid1 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "image1 image1 price1"
+        "image1 image1 price2";
+}
+
+.image1 {
+    grid-area: image1;
+    background-image: url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg);
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-position: left;
+}
+
+.image1 h1 {
+    background: #ffc600;
+    font-size: 2em;
+    width: fit-content;
+    padding: 0.3em;
+    position: relative;
+    top: 4.5em;
+    left: 1em;
+}
+
+.image1 p {
+    background: #ffc600;
+    font-size: 1em;
+    font-weight: bold;
+    width: fit-content;
+    padding: 0.3em;
+    position: relative;
+    top: 8em;
+    left: 2em;
+}
+
+.price1, .price2 {
+    background: #ffc600;
+    width: fit-content;
+    width: auto;
+}
+
+.price1 h1, .price1 p , .price2 h1, .price2 p{
+    text-align: center;
+}
+
+.price1 h1, .price2 h1{
+   font-size: 60px;
+   font-weight: 300;
+   padding-top: 10px;
+   margin-bottom: 0;
+}
+
+.price1 p, .price2 p{
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+.section-2 {
+    margin-top: 20px;
+}
+
+.grid2 {
+    margin-top: 20px;
+    text-align: center;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     grid-gap: 20px;
+ }
+
+.card {
+     background: white;
+     width: auto;
+     height: 100%;
+     text-align: center;
+ }
+
+ .icon {
+     font-size: 55px;
+ }
+
+ .card p {
+     color: #767676;
+     font-weight: bolder;
+ }
+
+ .section-3 {
+     max-width: 100%;
+     padding: 2.8em;
+     display: flex;
+     margin-top: 20px;
+     background: white;
+ }
+
+ .content-2 {
+     margin-top: 55px;
+     line-height: 35px;
+ }
+
+ .content-2 a{
+    text-decoration: none;
+    color: black;
+    background: #ffc600;
+    padding: 1em;
+}
+
+.slip {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.slip div{
+    width: auto;
+    font-size: 30px;
+}
+
+.slip p:first-child{
+    height: 10px;
+    width: 40%;
+    background-image: linear-gradient(110deg, transparent, #ffc600);
+}
+
+.slip p:last-child{
+    height: 10px;
+    width: 40%;
+    background-image: linear-gradient(110deg, #ffc600, transparent);
+}
+
+.section-4 {
+    margin-top: 20px;
+}
+
+.grid3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "theme1 theme1 theme1 theme1 theme1"
+    "theme2 theme2 theme2 theme2 theme2"; 
+}
+
+.theme1 img, .theme2 img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 815px){
+
+    header {
+        display: none;
+    }
+
+    .header-2 {
+        display: block;
+    }
+
+    select {
+		font-size: 17px;
+		border-radius: 10px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        background: #ffc600;
+        border: none;
+        width: 120px;
+    }
+
+    .grid1 {
+        display: block;
+    }
+
+    .price1, .price2 {
+        border-radius: 105px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding: 0.1px;
+    }
+
+    .price1 h1, .price2 h1{
+        font-size: 60px;
+        font-weight: 300;
+        padding-top: 10px;
+        margin-bottom: 0;
+     }
+
+     /* .grid2 {
+        grid-template-areas: 
+         "card card"
+         "card card";
+    } */
+
+    .section-2 {
+        justify-content: center;
+    }
+
+    .section-3 {
+        border-radius: 5px;
+        display: block;
+    }
+
+    .content-2, .content-1{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .card {
+        border-radius: 5px;
+    }
+    .card p {
+        font-size: 12px;
+    }
+
+    .image1 {
+        width: auto;
+        border-radius: 15px;
+        padding: 0;
+    }
+
+    .image1 h1 {
+        margin-bottom: 0;
+        font-size: 27px;
+    }
+
+    .image1 h1, .image p {
+        margin-left: 1em;
+        left: auto;
+    }
+    
+    .slip div, .slip{
+        font-size: 20px;
+    }
+
+    .grid3 {
+        grid-template-areas: 
+        "theme1 theme1" 
+        "theme1 theme1" 
+        "theme1 theme1"
+        "theme2 theme2"
+        "theme2 theme2"; 
+    }
+    
+    .theme1 img, .theme2 img {
+        border-radius: 133px;
+    }
+
+    .slip div{
+        margin-top: 10px;
+    }
+}
